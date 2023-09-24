@@ -1,0 +1,166 @@
+/* notes
+none: more than 900px
+lg: 900px
+md: 768px
+sm: 650px
+xs: 450px
+*/
+
+/*--------------------------------------------------- font section s0: ----------------------------------------*/
+@font-face {
+    font-family: blackf;
+    src: url('../public/fonts/Roboto-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: boldf;
+    src: url('../public/fonts/Roboto-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: lightf;
+    src: url('../public/fonts/Roboto-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: mediumf;
+    src: url('../public/fonts/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: regularf;
+    src: url('../public/fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+   @font-face {
+    font-family: thinf;
+    src: url('../public/fonts/Roboto-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+   }
+  
+  :root {
+    --mainColor: #e90101;
+    --whiteColor: #FFFFFF;
+    --blackColor: #17181B;
+    --blackf: blackf;
+    --boldf: boldf;
+    --mediumf: mediumf;
+    --regualrf: regualrf;
+    --lightf: lightf;
+    --thinf: thinf;
+  }
+  *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body{
+    width: 100%;
+    min-height: 100vh;
+    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size: 16px;
+    font-family: var(--thinf);
+    position: relative;
+  }
+  .main-container{
+    width: 100%;
+    max-width: 1600px;
+    min-width: 320px;
+  }
+  .wrapper{
+    width: 90%;
+    margin: auto;
+  }
+  /* font family */
+  .blackf{font-family: var(--blackf);}
+  .boldf{font-family: var(--boldf);}
+  .mediumf{font-family: var(--mediumf);}
+  .regualrf{font-family: var(--regualrf);}
+  .lightf{font-family: var(--lightf);}
+  .thinf{font-family: var(--thinf);}
+  /* font sizes */
+  h1{
+    font-size: 62px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  h2{
+    font-size: 36px;
+  }
+  h3{
+    font-size: 28px;
+  }
+  h4{
+    font-size: 22px;
+  }
+  h5{
+    font-size: 20px;
+  }
+  h6{
+    font-size: 18px;
+  }
+  div.large p, div.large a, p.large, a.large{
+    font-size: 20px;
+  }
+  div, p, a{
+    font-size: 16px;
+  }
+  a{
+    text-decoration: underline;
+  }
+  span{
+    font-size: 14px;
+  }
+  .small-text{
+    font-size: 12px;
+  }
+  
+  /* text colors */
+  .txtmaincolor{color: var(--mainColor);}
+  .txtwhitecolor{color: var(--whiteColor);}
+  .txtblackcolor{color: var(--BlackColor);}
+  
+  /* background colors */
+  .bgmaincolor{background-color: var(--mainColor);}
+  .bgwhitecolor{background-color: var(--whiteColor);}
+  .bgblackcolor{background-color: var(--BlackColor);}
+
+  .button-primary{
+    width: fit-content;
+    padding: 10px 20px;
+    color: white;
+    background: var(--mainColor);
+    outline: none;
+    border: 1px solid var(--blackColor);
+    transition: background 0.5s;
+    border-radius: 10px;
+  }
+  .button-primary:hover{
+    background: var(--blackColor);
+  }
+  
+  /* other components */
+  /* media queries */
+  
+  @media(max-width: 650px)
+  {
+    /* font sizes */
+  h1{
+    font-size: 50px;
+  }
+  h3{
+    font-size: 22px;
+  }
+  }
+  

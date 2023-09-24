@@ -1,0 +1,17 @@
+.header{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 10px 0;
+    background: transparent;
+    z-index: 9999;
+}
+.header ul{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+.header ul li{
+    display: inline-block;
+}
